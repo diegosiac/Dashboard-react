@@ -1,0 +1,98 @@
+/* Navbar hamburger */
+.nav-hamburger button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.nav-hamburger button span {
+    border-radius: 4px;
+    width: 60%;
+    height: 4px;
+    margin: 5px auto;
+    box-shadow: 0 0 20px 2px #fff;
+    animation-duration: 0.4s; 
+    animation-fill-mode: forwards;
+    display: block;
+    background: #fff;
+}
+/* NB Burger Animated */
+.nav-hamburger button.open .hambur-top-line {
+    animation-name: top-line-animation;
+}
+.nav-hamburger button.open .hambur-middle-line {
+    animation-name: middle-line-animation;
+}
+.nav-hamburger button.open .hambur-bottom-line {
+    animation-name: bottom-line-animation;
+}
+.nav-hamburger button .hambur-top-line {
+    animation-name: top-line-animation-close;
+}
+.nav-hamburger button .hambur-middle-line {
+    animation-name: middle-line-animation-close;
+}.open
+.nav-hamburger button .hambur-bottom-line {
+    animation-name: bottom-line-animation-close;
+}
+@keyframes top-line-animation {
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(4px) rotate(-45deg);
+    }
+}
+@keyframes middle-line-animation {
+    20%, 100%{
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+}
+@keyframes bottom-line-animation {
+    50%, 100%{
+        margin: 0 auto;
+        transform: translateY(-4px) rotate(45deg);
+    }
+}
+
+@keyframes top-line-animation-close {
+    0%{
+        margin: 0 auto;
+        transform: translateY(4px) rotate(-45deg);
+    }
+    50%, 100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+
+    }
+}
+@keyframes middle-line-animation-close {
+    0% {
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    20%, 100%{
+        margin: 0 auto;
+        width: 60%;
+        opacity: 1;
+    }
+}
+@keyframes bottom-line-animation-close {
+    0%{
+        margin: 0 auto;
+        transform: translateY(-4px) rotate(45deg);
+    }
+    50%, 100%{
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-hamburger button {
+        display: block;
+    }
+}

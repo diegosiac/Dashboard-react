@@ -1,0 +1,66 @@
+.h-menu {
+    background-color: #000000f1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: transform .2s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-active {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.hm-container {
+    height: 150px;
+    width: 150px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hm-text{
+    position: relative;
+    display: block;
+    height: 30px;
+    text-decoration: none;
+}
+
+.hm-text::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: #ff8d0b;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hm-text:hover::before{
+    transform: scaleX(1);
+}
+
+.hm-text::before{
+  transform-origin: left;
+}
+
+.hm-text span{
+    width: 100%;
+    height: 30px;
+    font-size: 19px;
+    text-shadow: 0 0 4px #fff;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Fugaz One', cursive;   
+}

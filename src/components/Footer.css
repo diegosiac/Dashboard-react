@@ -1,0 +1,120 @@
+.footer {
+    padding: 40px 0;
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif, cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 93%;
+    display: flex;
+}
+
+.footer-left, .footer-right {
+    min-width: 50%;
+}
+
+.footer-left-container, .footer-right-container {
+    max-width: 400px;
+}
+
+.footer-right {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.footer-right-container{
+    text-align: end;
+}
+
+.f-r-logos{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.f-r-logos a{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.f-r-logos a:nth-child(1){
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px 5px #1da1f2;
+}
+
+.f-r-logos a:nth-child(2){
+    background-color: #1877f2;
+    box-shadow: 0 0 20px 5px #1877f2;
+}
+
+.f-r-logos a:nth-child(3){
+    background-color: #f00075;
+    box-shadow: 0 0 20px 5px#f00075;
+}
+
+.f-r-logos a:nth-child(4){
+    background-color: red;
+    box-shadow: 0 0 20px 5px red;
+}
+
+.f-title{ 
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 20px #fff;
+    font-family: 'Fugaz One', cursive;
+}
+
+
+.f-description {
+    font-weight: 1;
+    word-spacing: 5px;
+}
+
+.f-l-description{
+    font-size: 12px;
+    line-height: 20px;
+    width: 80%;
+}
+
+.f-r-description{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-right{
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .footer-right-container,.f-r-logos{
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .footer-container {
+        width: 93%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-left, .footer-right {
+        min-width: 100%;
+    }
+}

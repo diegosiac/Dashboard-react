@@ -1,0 +1,88 @@
+.info-streamer-live {
+    height: 40%;
+    display: flex;
+}
+
+.info-live-container {
+    width: 75%;
+}
+
+.live-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.live-circle {
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-pulsate {
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    animation: pulsate2 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulsate2 {
+  100% {
+      box-shadow:
+      0 0 20px #ff0000,
+      0 0 30px #ff0000,
+      0 0 40px #ff0000,
+      0 0 80px #ff0000
+  }
+  
+  0% {
+    box-shadow:
+    0 0 0px #ff0000,
+    0 0 30px #ff0000,
+    0 0 80px #ff0000,
+    0 0 120px #ff0000
+  }
+}
+
+.live-text {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+}
+
+.live-text div {
+    color: #ff0000;
+    font-family: 'Fugaz One', cursive;
+}
+
+.live-viewers {
+    width: 47%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.live-viewers div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.live-viewers div:nth-child(2) {
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.live-description {
+    margin-top: 25px;
+    display: flex;
+}
+
+.info-live-game {
+    width: 25%;
+}

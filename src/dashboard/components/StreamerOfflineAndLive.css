@@ -1,0 +1,23 @@
+.container-streamer-live {
+    width: 100%;
+    margin-bottom: 150px;
+    border-bottom: 1px solid #2c3e50;
+    
+}
+
+.streamer-live-text {
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 5px 10px #2c3e50;
+    border-bottom: 1px solid #2c3e50;
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+}
+
+.live-streamers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}

@@ -1,0 +1,83 @@
+.card-streamer-container {
+    min-width: 350px;
+    max-width: 350px;
+    padding: 10px;
+    margin: 20px 10px;
+    background-color: #ececec;
+    color: #2c3e50;
+}
+
+.info-streamer-container {
+    display: flex;
+}
+
+.info-img {
+    width: 50%;
+}
+
+.info-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.info-container-name {
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000;
+}
+
+.info-partner{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.info-partner i:nth-child(1), .info-partner p:nth-child(2){
+    color: #575757;
+    
+}
+
+.info-name {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Fugaz One', cursive;
+}
+
+.info-name a {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.info-container-viewers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.info-viewers div:nth-child(1){
+    text-align: center;
+    font-weight: bold;
+}
+
+.info-viewers div:nth-child(2){
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.info-streamer-description {
+    padding: 10px 0;
+    font-size: 15px;
+    font-family: sans-serif;
+}

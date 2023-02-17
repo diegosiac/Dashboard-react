@@ -1,0 +1,15 @@
+.section-t {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.st-container {
+    width: 90%;
+    margin: 100px 0;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
