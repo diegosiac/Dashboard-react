@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getEnvironments } from '../helpers/getEnvironments';
+import { getEnvironments } from '../helpers';
 
 const { VITE_AUTHORIZATION_BEARER, VITE_CLIEND_ID } = getEnvironments();
 

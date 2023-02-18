@@ -17,7 +17,7 @@ export const NavBar = () => {
                 <a href="#" className="hc-title">BUM</a>
             </div>
             <div className="nav-menu">
-                <h6 onClick={ onChangePage } className="nav-item1"><span> INICIO </span></h6>
+                <h5 onClick={ onChangePage } className="nav-item-dash"><span> INICIO </span></h5>
             </div>
         </nav> 
     );

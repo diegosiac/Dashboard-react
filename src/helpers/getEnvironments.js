@@ -1,9 +1,8 @@
-
 export const getEnvironments = () => {
 
-    import.meta.env;
-
+    
     return {
-        ...import.meta.env
+        VITE_AUTHORIZATION_BEARER: import.meta.env.VITE_AUTHORIZATION_BEARER,
+        VITE_CLIEND_ID: import.meta.env.VITE_CLIEND_ID,
     };
 };

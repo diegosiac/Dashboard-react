@@ -1,3 +1,54 @@
-.nav-menu h6 {
+.nav-item-dash {
+    width: 130px;
+    height: 50px;
+    font-size: 17.5px;
+    margin-right: 50px;
+    text-shadow: 0 0 20px #fff;
+    color: #fff;
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-end;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Fugaz One', cursive;
+}
+
+.nav-item-dash h6:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
+
+.nav-item-dash h6::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform .6s ease-in-out;
+    transform-origin: right;
+}
+
+
+@keyframes pulsate {
+    100% {
+        text-shadow:
+        0 0 17px #fff,
+        0 0 45px #fff,
+        0 0 50px #fff,
+        40px 0 80px #fff
+    }
+    
+    0% {
+      text-shadow:
+      0 0 13px #fff,
+      0 0 50px #fff,
+      0 0 64px #fff,
+      0px 0 70px #fff
+    }
 }
