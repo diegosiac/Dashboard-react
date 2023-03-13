@@ -1,7 +1,7 @@
 # Seguimiento de usuarios de Twitch - BUM TRAKER
 Esta solución utiliza el servicio <a href="https://dev.twitch.tv/docs/api/">API Twitch</a> para buscar datos públicos de los usuarios (streamers) a partir de un lista, como sus vistas totales, seguidores y streams, y se muestran en un pagina junto con unas gráficas que muestra los TOPS 10 usuarios mas seguidos y mas vistas que tu hayas elegido, que se generan a partir de la librería `Chart.js` y `react-chartjs-2`
 
-Deployment [BUM TRAKER](https://bum-stats.netlify.app)
+Deployment [BUM TRAKER](https://bumtraker.netlify.app)
 
 ![preview](https://i.postimg.cc/4NCW9v03/Captura-de-pantalla-2023-03-12-192758.png)
 
