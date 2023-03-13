@@ -4,12 +4,8 @@ import './NavBar.css'
 export const NavBar = () => {
 
     const navigate = useNavigate();
-  
-    const onChangePage = () => {
-      navigate('/home', {
-        replace: true
-    });
-    };
+
+    const onChangePage = () => navigate('/home', { replace: true });
     
     return (
         <nav className="header">
@@ -17,7 +13,7 @@ export const NavBar = () => {
                 <a href="#" className="hc-title">BUM</a>
             </div>
             <div className="nav-menu">
-                <h5 onClick={ onChangePage } className="nav-item-dash"><span> INICIO </span></h5>
+                <h5 onClick={ onChangePage } className="nav-item-dash" aria-label='changePageHome'><span> INICIO </span></h5>
             </div>
         </nav> 
     );

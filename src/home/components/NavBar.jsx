@@ -10,11 +10,7 @@ export const NavBar = () => {
 
   const [menuResp, setMenuResp] = useState(false);
 
-  const onChangePage = () => {
-    navigate('/dashboard', {
-      replace: true
-  });
-  };
+  const onChangePage = () => navigate('/dashboard', { replace: true});
 
   return (
     <nav className="header">
@@ -22,7 +18,7 @@ export const NavBar = () => {
             <a href="#" className="hc-title">BUM</a>
         </div>
         <div className="nav-menu">
-            <h6 href="" onClick={ onChangePage } className="nav-item1"><span> ESTADÍSTICAS </span></h6>
+            <h6 onClick={ onChangePage } className="nav-item1" aria-label='changePageDash'><span> ESTADÍSTICAS </span></h6>
             {/* <!-- Header Nav Burger --> */}
             <BurguerButton menuResp={ menuResp } setMenuResp={ setMenuResp }/>
         </div>

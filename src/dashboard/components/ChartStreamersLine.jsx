@@ -15,9 +15,9 @@ ChartJS.register(
 
 export const ChartStreamersLine = ({streamers, spinner }) => {
     
-    const dataDefault = defaultData();
+    const dataChartDefault = defaultData();
 
-    if ( spinner ) return ( <Line options={options} data={dataDefault} /> );
+    if ( spinner ) return ( <Line aria-label='chart' options={options} data={dataChartDefault}/> );
 
     const { labels, data } = getChartFilter(streamers, "follows");
 
@@ -25,7 +25,7 @@ export const ChartStreamersLine = ({streamers, spinner }) => {
 
     return (
         <>
-            <Line options={options} data={dataChart} />
+            <Line aria-label='chartTrue' options={options} data={dataChart} />
         </>
     );
 };

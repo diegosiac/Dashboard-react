@@ -6,6 +6,9 @@ export const getFollowersAndStreamerInfo = async( streamers = [] ) => {
     try {
         const streamersList = streamers;
         const twitchApi = setTwitchApi( urls.urlApi );
+        let streamerError = false
+        let message;
+
         await Promise.allSettled(
             streamersList.map( async(streamer) => {
                 try {
@@ -23,10 +26,12 @@ export const getFollowersAndStreamerInfo = async( streamers = [] ) => {
     
                     streamer.follows = follows.total.toLocaleString('en-US');
                 } catch (error) {
-                    console.log(error);
+                    return streamerError = true, message = error
                 };
             })
         );
+
+        if (streamerError) throw message
     
         return {
             streamersList
@@ -34,7 +39,7 @@ export const getFollowersAndStreamerInfo = async( streamers = [] ) => {
     } catch (error) {
         return {
             ok: false,
-            error
+            message: error
         };
     };
 

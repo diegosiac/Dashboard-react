@@ -1,18 +1,17 @@
 import { types } from '../types/types';
 
-export const dashReducer = ( state = { a: "asdf"}, action ) => {
+export const dashReducer = ( state = {}, action ) => {
 
     switch ( action.type ) {
         case types.refresh:
             return {
-                streamersLive: action.streamersLive,
-                streamersOffline: action.streamersOffline
+                streamersList: action.payload
             };
         
         case types.error:
             return {
                 ok: false,
-                errorMessage: action.error
+                errorMessage: action.payload
             };
 
         default:

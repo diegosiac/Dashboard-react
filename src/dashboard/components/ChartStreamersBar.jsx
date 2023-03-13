@@ -9,7 +9,7 @@ export const ChartStreamersBar = ({streamers, spinner }) => {
   
     const dataDefault = defaultData();
 
-    if ( spinner ) return ( <Bar options={options} data={dataDefault} /> );
+    if ( spinner ) return ( <Bar aria-label='chartBar' options={options} data={dataDefault} /> );
 
     const { labels, data } = getChartFilter(streamers, "views");
 
@@ -18,7 +18,7 @@ export const ChartStreamersBar = ({streamers, spinner }) => {
 
     return (
         <>
-            <Bar options={options} data={dataChart} />
+            <Bar aria-label='chartBar' options={options} data={dataChart} />
         </>
     );
 };

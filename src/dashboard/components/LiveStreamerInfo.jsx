@@ -24,7 +24,7 @@ export const LiveStreamerInfo = ({ liveData }) => {
                 </div>
             </div>
             <div className="info-live-game">
-                <img id="imgGame" src={gameImg} alt="TwitchImage"/>
+                <img id="imgGame" src={gameImg} alt="TwitchImage" aria-label='Info-Img'/>
             </div>
         </div>
     );
