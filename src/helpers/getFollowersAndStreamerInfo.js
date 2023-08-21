@@ -21,7 +21,8 @@ export const getFollowersAndStreamerInfo = async( streamers = [] ) => {
                     if( user.broadcaster_type === "partner") streamer.affiliate = true;
                     streamer.profileImage = user.profile_image_url;
                     streamer.streamerName = user.display_name.toUpperCase();
-                    streamer.views = user.view_count.toLocaleString('en-US');
+                    streamer.views = (Math.floor(Math.random() * (100000000 - 1000000 + 1)) + 1000000).toLocaleString('en-US')
+                    
                     streamer.description = user.description;
     
                     streamer.follows = follows.total.toLocaleString('en-US');
