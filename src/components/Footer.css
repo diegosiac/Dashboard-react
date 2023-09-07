@@ -80,14 +80,8 @@
     font-family: 'Fugaz One', cursive;
 }
 
-
-.f-description {
-    font-weight: 1;
-    word-spacing: 5px;
-}
-
 .f-l-description{
-    font-size: 12px;
+    font-size: 13px;
     line-height: 20px;
     width: 80%;
 }

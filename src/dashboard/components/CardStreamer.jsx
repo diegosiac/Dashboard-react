@@ -6,7 +6,7 @@ import './CardStreamer.css';
 export const CardStreamer = ({ name, profileUrl, imgUrl, followers, viwers, description, partner, live, liveData }) => {
 
     return (
-        <div className="card-streamer-container" data-testid="card-streamer">
+        <article className="card-streamer-container" data-testid="card-streamer">
             <div className="info-streamer">
                 <div className="info-streamer-container">
                     <div className="info-img">
@@ -45,6 +45,6 @@ export const CardStreamer = ({ name, profileUrl, imgUrl, followers, viwers, desc
                 live
                 && <LiveStreamerInfo liveData={liveData}/>
             }
-        </div>
+        </article>
     )
 }

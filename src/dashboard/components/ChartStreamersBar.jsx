@@ -6,14 +6,11 @@ import { defaultData, options } from '../charts/configBar';
 ChartJS.register( CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend );
 
 export const ChartStreamersBar = ({streamers, spinner }) => {
-  console.log()
     const dataDefault = defaultData();
 
     if ( spinner ) return ( <Bar aria-label='chartBar' options={options} data={dataDefault} /> );
 
     const { labels, data } = getChartFilter(streamers, "views");
-
-        console.log(streamers)
 
     const dataChart = defaultData(labels, data);
     

@@ -14,7 +14,11 @@ export const getFollowersAndStreamerInfo = async( streamers = [] ) => {
                 try {
                     const { data } = await twitchApi.get( urls.pathUsers + streamer.streamerName);
                     const user = data.data[0]
-                    const { data:follows } = await twitchApi.get( urls.pathFollows + user.id );
+                    const { data:follows } = await twitchApi.get(urls.pathFollows, {
+                        params: {
+                            broadcaster_id: user.id
+                        }
+                    });
     
                     streamer.urlTwitch = urls.urlTwitch + user.display_name.toUpperCase();
     
